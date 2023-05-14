@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stray Care</title>
+  <link rel="Stylesheet" href="contactus.css">
+  <link rel="icon" type="image" href="images/logo/favicon-16x16.png">
+</head>
+
+<body>
+  <div class="header">
+    <img src="images/Stray Care 2.png" alt="image logo" width="130" height="100">
+    <h2>Stray Care</h2>
+    <p>Lets save stray together.</p>
+  </div>
+
+  <div class="topnav"> 
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="injuired.html">Report the injuired strays</a>
+    <a href="food.html">Food</a>
+    <a href="products.html">Products</a>
+    <a href="donateus.html">Donate Us</a>
+  </div><br><br>
+
+  <div class="container">
+      <form action="">
+          <!-- <div class="row"> -->
+              <!-- <div class="col"> -->
+    <h1>Contact Us</h1>
+    <p><b>For any enquiry or feedback contact here</b></p>
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Emaid ID">
+      <input type="text" id="phone" placeholder="Phone no.">
+      <input type="text" id="subject" placeholder="Subject">
+     
+      <textarea id="message" rows="3" cols="30" placeholder="Enter Message..."></textarea>
+      <br>
+      <button type="button" onclick="sendEmail()">Send Message</button>
+</form></div>
+    <br>
+    <div class="wrapper">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/loyal.paws_/"><img src="images/icons/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com"><img src="images/icons/facebook-logo.png" alt=""></a>
+      <a href="https://www.youtube.com/@loyal.paws_"><img src="images/icons/youtube.png" alt=""></a>
+    </div>
+    
+  <div class="center">
+    <div class="footer">
+      <h6>©2023 Stray Care. All rights reserved.</h6>
+    </div>
+    <br>
+    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+      function sendEmail() {
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+
+        let body = "Name :" + name + "<br/> Email :" + email + "<br/> Phone no.:" + phone + "<br/> Subject :" + subject + "<br/> Message :" + message;
+
+        Email.send({
+
+          // SecureToken : "93f0bfca-c666-4020-a9d4-8b14cc032d50"
+          Host: "smtp.elasticemail.com",
+          Username: "computerfacts01@gmail.com",
+          Password: "A65919AC78107A003A14FD4C1DF2AE03B517",
+          To: 'formemail321@gmail.com',
+          // To: 'affiliatebuddymc@gmail.com',
+          From: "computerfacts01@gmail.com",
+          Subject: subject,
+          Body: body
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+</body>
+</html>

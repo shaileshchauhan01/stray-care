@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stray Care</title>
+  <link rel="stylesheet" href="injuired.css">
+  <script src="injuired.js"></script>
+  <link rel="icon" type="image" href="images/logo/favicon-16x16.png">
+</head>
+
+<body>
+  <div class="header">
+    <img src="images/Stray Care 2.png" alt="image logo" width="130" height="100"><br><br>
+    <h2>Stray Care</h2><br>
+    <p>Lets save stray together.</p><br>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="injuired.html">Report the injuired strays</a>
+    <a href="food.html">Food</a>
+    <a href="products.html">Products</a>
+    <a href="donateus.html">Donate Us</a>
+  </div><br><br>
+
+  <div class="container">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <div class="row">
+        <div class="col">
+          <h3 class="title">Your Information</h3>
+          <div class="inputBox">
+            <span>full name :</span>
+            <input type="text" id="name">
+          </div>
+
+          <div class="inputBox">
+            <span>email :</span>
+            <input type="email" id="email">
+          </div>
+
+          <div class="inputBox">
+            <span>phone no. :</span>
+            <input type="text" id="phone">
+
+          </div>
+        </div>
+
+
+        <div class="col">
+          <h3 class="title">Animal Information</h3>
+          <div class="label">
+            <label for="animal">Animal :</label>
+            <select id="animal">
+              <option value="select animal">Select Animal</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="cow">Cow</option>
+              <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="animal">Injuiry :</label>
+            <select id="injuiry">
+              <option value="select injuiry">Select Injuiry</option>
+              <option value="accident">Accident</option>
+              <option value="attack">Animal Attack</option>
+              <option value="sick">Sick</option>
+              <option value="other">Other</option>
+            </select>
+
+            <!-- <div class="ok"> -->
+            <div class="inputBox">
+              <span>Images :</span>
+              <input type="file" id="file" />
+              <label for="file"></label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="inputBox">
+            <span>address :</span>
+            <input type="text" id="address">
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>city :</span>
+              <input type="text" id="city">
+            </div>
+
+            <div class="inputBox">
+              <span>zip code :</span>
+              <input type="text" id="code">
+            </div>
+
+            <button type="button" onclick="sendEmail()">Help Strays</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <br><br>
+  <div class="wrapper">
+    <h4>Follow Us</h4>
+    <a href="https://www.instagram.com/loyal.paws_/"><img src="images/icons/instagram.png" alt=""></a>
+    <a href="https://www.facebook.com"><img src="images/icons/facebook-logo.png" alt=""></a>
+    <a href="https://www.youtube.com/@loyal.paws_"><img src="images/icons/youtube.png" alt=""></a>
+  </div>
+<br>
+<div class="center">
+    <div class="footer">
+        <h6>©2023 Stray Care. All rights reserved.</h6>
+    </div><br>
+    </div>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+  <script>
+    function sendEmail() {
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let animal = document.getElementById("animal").value;
+      let injuiry = document.getElementById("injuiry").value;
+      let file = document.getElementById("file").value;
+      let address = document.getElementById("address").value;
+      let city = document.getElementById("city").value;
+      let code = document.getElementById("code").value;
+
+      let body = "Name :" + name + "<br/> Email :" + email + "<br/> Phone no.:" + phone + "<br/> Animal :" + animal + "<br/> Injuiry :" + injuiry + "<br/> File :" + file + "<br/> Address :" + address + "<br/> City :" + city + "<br/> Zip Code :" + code;
+
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "ourhonestreviews10@gmail.com",
+    Password : "E40F811549E46D4118FA0DDBC9673A35A7D9",
+    To : 'formemail321@gmail.com',
+    From : "ourhonestreviews10@gmail.com",
+    Subject : "Information",
+    Body : body
+}).then(
+  message => alert(message)
+);
+    }
+  </script>
+</body>
+</html>
+

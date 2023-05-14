@@ -1,0 +1,205 @@
+body {
+    font-family: Arial;
+    padding: 10px;
+    background-image: url("images/Stray\ Care1.png");
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:800px) {
+
+    /* For tablets: */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    /* background: white; */
+    background: linear-gradient(60deg, rgb(217, 210, 210), white, rgb(217, 210, 210));
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 55px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 17px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-size: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, white 60%, #333 40.1%);
+
+}
+
+.container form {
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col {
+    flex: 1 1 250px;
+}
+
+.container form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+.container form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus {
+    border: 1px solid #000;
+}
+
+.container form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .row .col .flex .inputBox {
+    margin-top: 5px;
+}
+
+.container form .row .col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #333;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.container form .submit-btn:hover {
+    background: black;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+form button:hover{
+    background: #000;
+    font-size: 22px;
+}
+  .ok{
+    padding-top: 5px;
+  }
+
+  .label{
+    padding-top: 25px;
+  }
+  input[type=text], select{
+    width: 100%;
+    padding: 10.5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(191, 186, 186);
+    box-sizing: border-box;
+  }
+ 
+
+  .wrapper{
+    text-align: center;
+  }

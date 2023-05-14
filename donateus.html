@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Care</title>
+    <link rel="stylesheet" href="donateus.css">
+    <link rel="icon" type="image" href="images/logo/favicon-16x16.png">
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/Stray Care 2.png" alt="image logo" width="130" height="100"><br><br>
+        <h2>Stray Care</h2><br>
+        <p>Lets save stray together.</p><br>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="injuired.html">Report the injuired strays</a>
+        <a href="food.html">Food</a>
+        <a href="products.html">Products</a>
+        <a href="donateus.html">Donate Us</a>
+    </div><br><br>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">billing address</h3>
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" >
+                    </div>
+
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">payment</h3>
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>card exp :</span>
+                        <input type="month">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" onclick="successfullPayment()">Proceed to Checkout</button>
+        </form>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/loyal.paws_/"><img src="images/icons/instagram.png" alt=""></a>
+        <a href="https://www.facebook.com"><img src="images/icons/facebook-logo.png" alt=""></a>
+        <a href="https://www.youtube.com/@loyal.paws_"><img src="images/icons/youtube.png" alt=""></a>
+      </div>
+    <br>
+    <div class="center">
+        <div class="footer">
+            <h6>©2023 Stray Care. All rights reserved.</h6>
+        </div><br><br>
+
+        <script>
+            function successfullPayment() {
+                alert("Payment Successful");
+            }
+        </script>
+</body>
+
+</html>
