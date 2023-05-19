@@ -179,27 +179,30 @@ form button {
     border-radius: 30px;
 }
 
-form button:hover{
+form button:hover {
     background: #000;
     font-size: 22px;
 }
-  .ok{
-    padding-top: 5px;
-  }
 
-  .label{
+.ok {
+    padding-top: 5px;
+}
+
+.label {
     padding-top: 25px;
-  }
-  input[type=text], select{
+}
+
+input[type=text],
+select {
     width: 100%;
     padding: 10.5px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid rgb(191, 186, 186);
     box-sizing: border-box;
-  }
- 
+}
 
-  .wrapper{
+
+.wrapper {
     text-align: center;
-  }
+}

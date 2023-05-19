@@ -15,14 +15,15 @@
   <div class="header">
     <img src="images/Stray Care 2.png" alt="image logo" width="130" height="100"><br><br>
     <h2>Stray Care</h2><br>
-    <p>Lets save stray together.</p><br>
+    <p>Let's save strays together.</p><br>
   </div>
 
   <div class="topnav">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contactus.html">Contact Us</a>
+    <!-- <a href="contact.html">Contact Us</a> -->
     <a href="injuired.html">Report the injuired strays</a>
+    <a href="enquiry.html">Enquiry</a>
+    <a href="contact.html">Contact Us</a>
     <a href="food.html">Food</a>
     <a href="products.html">Products</a>
     <a href="donateus.html">Donate Us</a>
@@ -30,6 +31,7 @@
 
   <div class="container">
     <form onsubmit="sendEmail(); reset(); return false;">
+      <h1>Report Injuired Animals</h1><br><br>
       <div class="row">
         <div class="col">
           <h3 class="title">Your Information</h3>
@@ -99,7 +101,8 @@
               <input type="text" id="code">
             </div>
 
-            <button type="button" onclick="sendEmail()">Help Strays</button>
+            <button type="button" onclick="sendEmail()">Report Here</button>
+            
           </div>
         </div>
       </div>
@@ -112,12 +115,12 @@
     <a href="https://www.facebook.com"><img src="images/icons/facebook-logo.png" alt=""></a>
     <a href="https://www.youtube.com/@loyal.paws_"><img src="images/icons/youtube.png" alt=""></a>
   </div>
-<br>
-<div class="center">
+  <br>
+  <div class="center">
     <div class="footer">
-        <h6>©2023 Stray Care. All rights reserved.</h6>
+      <h6>©2023 Stray Care. All rights reserved.</h6>
     </div><br>
-    </div>
+  </div>
   </div>
 
   <script src="https://smtpjs.com/v3/smtp.js">
@@ -138,19 +141,20 @@
 
       let body = "Name :" + name + "<br/> Email :" + email + "<br/> Phone no.:" + phone + "<br/> Animal :" + animal + "<br/> Injuiry :" + injuiry + "<br/> File :" + file + "<br/> Address :" + address + "<br/> City :" + city + "<br/> Zip Code :" + code;
 
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ourhonestreviews10@gmail.com",
-    Password : "E40F811549E46D4118FA0DDBC9673A35A7D9",
-    To : 'formemail321@gmail.com',
-    From : "ourhonestreviews10@gmail.com",
-    Subject : "Information",
-    Body : body
-}).then(
-  message => alert(message)
-);
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "ourhonestreviews10@gmail.com",
+        Password: "E40F811549E46D4118FA0DDBC9673A35A7D9",
+        To: 'formemail321@gmail.com',
+        From: "ourhonestreviews10@gmail.com",
+        Subject: "Information",
+        Body: body
+      }).then(
+        message => alert(message)
+      );
     }
   </script>
-</body>
-</html>
 
+</body>
+
+</html>

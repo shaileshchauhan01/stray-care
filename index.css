@@ -5,7 +5,7 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background-image: url("images/Stray\ Care1.png");
+  background-image: url("/images/Stray\ Care1.png");
 
 }
 
@@ -117,7 +117,7 @@ iframe {
 
 .img {
   background-color: none;
-  width: auto padding: 20px;
+  width: auto padding 20px;
 
 }
 
